@@ -1,2 +1,13 @@
-<h1>heloo</h1>
+<h1>{{titletext}}</h1>
 <app-demo></app-demo>
+<img src="assets/images/futur-code.png" (click)="onLogoClicked()">
+<input type="text" [value]="titletext" #inputRef (keyup)="onKeyup(inputRef.value)"  />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-12">
+            <app-couse-card [coursetitle]="courseOne.description"></app-couse-card>
+        </div>
+    </div>
+</div>
+
